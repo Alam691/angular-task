@@ -1,0 +1,66 @@
+<div mat-dialog-title>
+    <h1>Feedback Form</h1>
+
+</div>
+<form [formGroup]="feedbackForm" (ngSubmit)="onFeedbackSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input type="text" matInput placeholder="Enter your name" formControlName="name">
+                    <mat-icon matSuffix>account_circle</mat-icon>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput placeholder="Enter your email" formControlName="email">
+                    <mat-icon matSuffix>alternate_email</mat-icon>
+                </mat-form-field>
+            </p>
+        </div>
+        <div class="row">
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Phone</mat-label>
+                    <input type="text" matInput placeholder="Enter your phone no" formControlName="phone">
+                    <mat-icon matSuffix>call</mat-icon>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Location</mat-label>
+                    <mat-icon matSuffix>location_on</mat-icon>
+                    <mat-select formControlName="location">
+                        <mat-option *ngFor="let value of city " [value]="value">
+                            {{value}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </p>
+        </div>
+
+
+
+        <Span> Do you like our service</Span>
+        <div class="row">
+            <mat-radio-group aria-label="Do you like our service." formControlName="service">
+                <mat-radio-button value="yes">Yes</mat-radio-button>
+                <mat-radio-button value="no">No</mat-radio-button>
+            </mat-radio-group>
+
+        </div>
+        <Span> Write your feedback here </Span>
+        <div class="row">
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Leave a comment</mat-label>
+                <textarea matInput placeholder="Ex. It makes me feel..." formControlName="suggestion"></textarea>
+            </mat-form-field>
+        </div>
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="submit" color="primary">Submit</button>
+        <button mat-raised-button type="button" [mat-dialog-close]="false" color="warn">Cancel</button>
+    </div>
+</form>

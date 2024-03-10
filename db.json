@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "feedback": [
+    {
+      "id": "d4ca",
+      "name": "Imtiaz Alam",
+      "email": "iala2218@gmail.com",
+      "phone": "8978787878",
+      "location": "Delhi ",
+      "service": "yes",
+      "suggestion": "I locv"
+    },
+    {
+      "id": "6392",
+      "name": "Noor",
+      "email": "noor@gmail.com",
+      "phone": "89878978789",
+      "location": "Chhattisgarh ",
+      "service": "yes",
+      "suggestion": "heyy"
+    },
+    {
+      "id": "5084",
+      "name": "abc",
+      "email": "abca@gmai.com",
+      "phone": "29831829",
+      "location": "Bihar ",
+      "service": "yes",
+      "suggestion": "hsdahjkashd"
+    },
+    {
+      "id": "825a",
+      "name": "Faheem",
+      "email": "fahem@gmail",
+      "phone": "8796796987",
+      "location": "Jharkhand ",
+      "service": "no",
+      "suggestion": "djsadkjhkj"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
